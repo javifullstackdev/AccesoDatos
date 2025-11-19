@@ -1,4 +1,4 @@
-package Tareas;
+
 
 /*
  * Ejercicio 2: Ficheros de texto

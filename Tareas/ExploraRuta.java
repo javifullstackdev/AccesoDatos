@@ -1,4 +1,4 @@
-package Tareas;
+
 
 /*
  * Ejercicio 1: Sistema de ficheros
