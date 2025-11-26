@@ -1,0 +1,17 @@
+[
+    {
+        "director": "Joe Johnston",
+        "titulo": "El Primer Vengador",
+        "anio": 2011
+    },
+    {
+        "director": "Cate Shortland",
+        "titulo": "Black Widow",
+        "anio": 2021
+    },
+    {
+        "director": "Anthony Russo y Joe Russo",
+        "titulo": "Avengers: Endgame",
+        "anio": 2019
+    }
+]
