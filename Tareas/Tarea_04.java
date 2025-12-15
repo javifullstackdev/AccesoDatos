@@ -66,12 +66,13 @@ public class Tarea_04 {
         }
     }
 
-
+    // Método para consultar y mostrar los registros de la tabla JUEGO:
     private static void mostrarJuegos(Connection conn) throws SQLException {
         String sql = "SELECT ID, NOMBRE, GENERO, PUNTUACION FROM JUEGO";
         try (Statement st = conn.createStatement();
              ResultSet rs = st.executeQuery(sql)) {
 
+            // Recorro el cursor fila a fila mientras haya resultados:
             while (rs.next()) {
                 int id = rs.getInt("ID");
                 String nombre = rs.getString("NOMBRE");
@@ -84,16 +85,22 @@ public class Tarea_04 {
         }
     }
 
+    // Método para añadir un nuevo juego a la base de datos:
     private static void insertarJuego(Connection conn, String nombre, String genero, double nota) throws SQLException {
         String sql = "INSERT INTO JUEGO (NOMBRE, GENERO, PUNTUACION) VALUES (?, ?, ?)";
+
+        // Uso PreparedStatment para pasar los parámetros de forma segura:
         try (PreparedStatement pst = conn.prepareStatement(sql)) {
             pst.setString(1, nombre);
             pst.setString(2, genero);
             pst.setDouble(3, nota);
+
+            // Ejecutamos la inserción:
             pst.executeUpdate();
         }
     }
 
+    // Método para modificar la nota de un juego exisitente buscándolo por nombre:
     private static void actualizarPuntuacion(Connection conn, String nombre, double nuevaNota) throws SQLException {
         String sql = "UPDATE JUEGO SET PUNTUACION = ? WHERE NOMBRE = ?";
         try (PreparedStatement pst = conn.prepareStatement(sql)) {
