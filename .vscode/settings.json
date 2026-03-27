@@ -2,5 +2,17 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "c:\\Users\\elchi\\Downloads\\json-20240303.jar"
+    ],
+    "sqltools.connections": [
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Postgres",
+            "database": "postgres",
+            "username": "postgres"
+        }
     ]
 }

@@ -37,7 +37,7 @@ Métodos importantes
 - delete()
 - renameTo(File)
 
-Ejemplo 1. Comprobar si existe un fichero (InfoFichero)
+Ejemplo 1. Comprobar si existe un fichero o directorio (infoFichero)
 
 2. Ficheros de texto
 
