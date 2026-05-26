@@ -4,7 +4,6 @@ target/
 # VS Code
 .vscode/
 
-# IntelliJ IDEA (por si se abre desde allí)
 .idea/
 *.iml
 
