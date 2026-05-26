@@ -1,0 +1,12 @@
+# Compilación Maven
+target/
+
+# VS Code
+.vscode/
+
+# IntelliJ IDEA (por si se abre desde allí)
+.idea/
+*.iml
+
+# MacOS
+.DS_Store
